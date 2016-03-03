@@ -8,52 +8,48 @@
     android:orientation="vertical" tools:context=".MainActivity">
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center_horizontal">
+        android:layout_height="48dp"
+        android:gravity="center_vertical|center_horizontal">
         <TextView
             android:text="@string/activity_main_title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
     </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
+    <ScrollView
+        android:layout_width="fill_parent"
         android:layout_height="fill_parent"
-        android:orientation="vertical"
-        android:gravity="center">
-        <Button
-            android:id="@+id/btn_spotify_streamer"
-            android:layout_width="250dp"
-            android:layout_height="wrap_content"
-            android:text="@string/title_spotify_streamer"/>
-        <Button
-            android:id="@+id/btn_scores_app"
-            android:layout_width="250dp"
-            android:layout_height="wrap_content"
-            android:text="@string/title_spotify_streamer"/>
-        <Button
-            android:id="@+id/btn_library_app"
-            android:layout_width="250dp"
-            android:layout_height="wrap_content"
-            android:text="@string/title_library_app"/>
-        <Button
-            android:id="@+id/btn_build_it_bigger"
-            android:layout_width="250dp"
-            android:layout_height="wrap_content"
-            android:text="@string/title_build_it_bigger"/>
-        <Button
-            android:id="@+id/btn_xyz_reader"
-            android:layout_width="250dp"
-            android:layout_height="wrap_content"
-            android:text="@string/title_xyz_reader"/>
-        <Button
-            android:id="@+id/btn_capstone"
-            android:layout_width="250dp"
-            android:layout_height="wrap_content"
-            android:text="@string/title_capstone"/>
-    </LinearLayout>
-
-
+        android:layout_marginTop="8dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            android:gravity="center">
+            <Button
+                android:id="@+id/btn_spotify_streamer"
+                style="@style/main_button"
+                android:text="@string/title_spotify_streamer" />
+            <Button
+                android:id="@+id/btn_scores_app"
+                style="@style/main_button"
+                android:text="@string/title_spotify_streamer"/>
+            <Button
+                android:id="@+id/btn_library_app"
+                style="@style/main_button"
+                android:text="@string/title_library_app"/>
+            <Button
+                android:id="@+id/btn_build_it_bigger"
+                style="@style/main_button"
+                android:text="@string/title_build_it_bigger"/>
+            <Button
+                android:id="@+id/btn_xyz_reader"
+                style="@style/main_button"
+                android:text="@string/title_xyz_reader"/>
+            <Button
+                android:id="@+id/btn_capstone"
+                style="@style/main_button"
+                android:text="@string/title_capstone"/>
+        </LinearLayout>
+    </ScrollView>
 
 
 </LinearLayout>
